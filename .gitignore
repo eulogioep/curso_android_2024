@@ -1,0 +1,206 @@
+
+### Android ###
+# archivos Gradle
+.gradle/
+construir/
+
+# Archivo de configuración local (ruta SDK, etc.)
+propiedades.locales
+
+# Archivos de registro/OS
+*.registro
+
+# Archivos y carpetas generados por Android Studio
+capturas/
+.externalNativeBuild/
+.cxx/
+*.apk
+salida.json
+
+#IntelliJ
+*.iml
+.idea/
+misceláneo.xml
+implementaciónTargetDropDown.xml
+renderizar.experimental.xml
+
+# Archivos de almacén de claves
+*.jks
+*.almacén de claves
+
+# Servicios de Google (por ejemplo, API o Firebase)
+servicios-google.json
+
+# Perfiles de Android
+*.hprof
+
+### Parche de Android ###
+gen-externo-apklibs
+
+# Se introdujo el reemplazo de los directorios .externalNativeBuild
+# con Android Estudio 3.5.
+
+### Kotlin ###
+# Archivo de clase compilado
+*.clase
+
+# Archivo de registro
+
+# Archivos BlueJ
+*.ctxt
+
+# Herramientas móviles para Java (J2ME)
+.mtj.tmp/
+
+# Archivos de paquete #
+*.frasco
+*.guerra
+*.nar
+*.oreja
+*.cremallera
+*.tar.gz
+*.rar
+
+# registros de fallos de la máquina virtual, consulte http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+repetición_pid*
+
+### Gradle ###
+.gradle
+**/construir/
+!src/**/construcción/
+
+# Ignorar la configuración de la GUI de Gradle
+configuración de la aplicación gradle
+
+# Evite ignorar el archivo jar contenedor de Gradle (los archivos .jar generalmente se ignoran)
+!gradle-wrapper.jar
+
+# Evite ignorar las propiedades del contenedor Gradle
+!gradle-wrapper.properties
+
+# Caché del proyecto
+.gradletasknamecache
+
+# Archivos generados por el complemento Eclipse Gradle
+# Núcleo de eclipse
+.proyecto
+# Específico de JDT (herramientas de desarrollo Java de Eclipse)
+.ruta de clase
+
+### Parche Gradle ###
+# Volcado del montón de Java
+
+### AndroidEstudio ###
+# Cubre los archivos que se ignorarán para el desarrollo de Android utilizando Android Studio.
+
+# Archivos de aplicación creados
+*.ap_
+*.aab
+
+# Archivos para ART/Dalvik VM
+*.dex
+
+# archivos de clase Java
+
+# archivos generados
+papelera/
+gen/
+afuera/
+
+# archivos Gradle
+
+# Firma de archivos
+.firma/
+
+# Archivo de configuración local (ruta SDK, etc.)
+
+# Carpeta Proguard generada por Eclipse
+proguard/
+
+# Archivos de registro
+
+# Estudio de Android
+/*/construir/
+/*/local.properties
+/*/afuera
+/*/*/construir
+/*/*/producción
+.navegación/
+*.ipr
+*~
+*.swp
+
+# Archivos de almacén de claves
+
+# Servicios de Google (por ejemplo, API o Firebase)
+# servicios-google.json
+
+# Parche de Android
+
+# Carpeta de compilación nativa externa generada en Android Studio 2.2 y posteriores
+.externalNativeBuild
+
+#NDK
+objeto/
+
+# IDEA IntelliJ
+*.iws
+/afuera/
+
+# Configuraciones específicas del usuario
+.idea/caches/
+.idea/bibliotecas/
+.idea/estante/
+.idea/espacio de trabajo.xml
+.idea/tareas.xml
+.idea/.nombre
+.idea/compiler.xml
+.idea/copyright/profiles_settings.xml
+.idea/codificaciones.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/scopes/scope_settings.xml
+.idea/diccionarios
+.idea/vcs.xml
+.idea/jsLibraryMappings.xml
+.idea/fuentes de datos.xml
+.idea/dataSources.ids
+.idea/sqlDataSources.xml
+.idea/dinámico.xml
+.idea/uiDesigner.xml
+.idea/assetWizardSettings.xml
+.idea/gradle.xml
+.idea/jarRepositories.xml
+.idea/navEditor.xml
+
+# Archivos de proyecto heredados de Eclipse
+.cproyecto
+.ajustes/
+
+# Herramientas móviles para Java (J2ME)
+
+# Archivos de paquete #
+
+# registros de fallos de la máquina virtual (Referencia: http://www.java.com/en/download/help/error_hotspot.xml)
+
+## Archivos específicos del complemento:
+
+# complemento mpeltonen/sbt-idea
+.idea_modules/
+
+# Complemento JIRA
+complemento-ide-atlassian.xml
+
+# Complemento Mongo Explorer
+.idea/mongoSettings.xml
+
+# Complemento Crashlytics (para Android Studio e IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+propiedades.de.tela
+
+### Parche de AndroidStudio ###
+
+!/gradle/wrapper/gradle-wrapper.jar

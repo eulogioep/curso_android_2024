@@ -11,14 +11,16 @@ fun main(){
 
     println("Elimino el primer carácter: ${nombre.removerPrimerCaracter()}")
 
+    println("Elimino el primer y el último carácter: ${nombre.removerPrimerYUltimoCaracter()}")
+
 }
 
 // Creando una extension function propia cuya función es eliminar el primer carácter de un string.
 
 fun String.removerPrimerCaracter(): String{
-    return this.substring(1, this.length)
+    return this.substring(1)
 }
 
-/* También se puede usar el = si la función es pequeña.
-fun String.removerPrimerCaracter(): String = return this.substring(1, this.length)
-*/
+// También se puede usar el = si la función es pequeña.
+fun String.removerPrimerYUltimoCaracter(): String = this.substring(1, this.length -1)
+

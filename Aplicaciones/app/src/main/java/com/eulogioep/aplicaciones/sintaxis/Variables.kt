@@ -1,4 +1,4 @@
-package com.eulogioep.aplicaciones
+package com.eulogioep.aplicaciones.sintaxis
 
 fun main(){
 

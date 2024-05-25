@@ -4,6 +4,7 @@ fun main(){
     ifBasico()
     ifAnidado()
     ifBoolean()
+    ifMultiple()
 }
 
 fun ifBasico(){
@@ -39,4 +40,21 @@ fun ifBoolean(){
         println("Estoy feliz")
 
     }
+}
+
+fun ifMultiple(){
+    var age: Int = 18
+    var hasLicense: Boolean = true
+
+//    if(age >= 18){
+//        if(hasLicense){
+//            println("Ya puedes conducir")
+//        }
+//    }
+
+    // Más eficaz:
+    if(age >= 18 && hasLicense){
+        println("Ya puedes conducir")
+    }
+
 }

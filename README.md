@@ -4,4 +4,4 @@
 
 2.- [Introducción a Android](https://github.com/eulogioep/curso_android_2024/tree/main/IntroduccionAndroid)
 
-3.- [Sintáxis básica]https://github.com/eulogioep/curso_android_2024/tree/main/Aplicaciones/app/src/main/java/com/eulogioep/aplicaciones/sintaxis
+3.- [Sintáxis básica](https://github.com/eulogioep/curso_android_2024/tree/main/Aplicaciones/app/src/main/java/com/eulogioep/aplicaciones/sintaxis)

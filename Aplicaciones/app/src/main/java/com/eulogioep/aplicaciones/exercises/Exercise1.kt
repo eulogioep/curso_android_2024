@@ -30,5 +30,4 @@ fun printNotificationSummary(numberOfMessages: Int) {
     } else {
         println("You have $numberOfMessages notifications.")
     }
-
 }

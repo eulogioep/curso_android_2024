@@ -89,15 +89,50 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         app:cardBackgroundColor="@color/background_component"
+        app:cardCornerRadius="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/viewMale">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/height"
-            android:textColor="@color/title_text" />
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/height"
+                android:textAllCaps="true"
+                android:textColor="@color/title_text">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvHeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/height_def"
+                android:textColor="@color/white"
+                android:textSize="38sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <com.google.android.material.slider.RangeSlider
+                android:id="@+id/rsHeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stepSize="1"
+                android:valueFrom="120"
+                android:valueTo="200">
+
+            </com.google.android.material.slider.RangeSlider>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
 
 
     </androidx.cardview.widget.CardView>

@@ -31,6 +31,7 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginBottom="8dp"
+                android:contentDescription="@string/male"
                 android:src="@drawable/ic_male"
                 app:tint="@color/white" />
 
@@ -47,7 +48,6 @@
 
     </androidx.cardview.widget.CardView>
 
-
     <androidx.cardview.widget.CardView
         android:id="@+id/viewFemale"
         android:layout_width="0dp"
@@ -61,12 +61,13 @@
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="60dp"
                 android:layout_height="60dp"
+                android:contentDescription="@string/female"
                 android:src="@drawable/ic_female"
                 app:tint="@color/white" />
 
@@ -82,5 +83,24 @@
 
 
     </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:cardBackgroundColor="@color/background_component"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewMale">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/height"
+            android:textColor="@color/title_text" />
+
+
+    </androidx.cardview.widget.CardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,4 +3,5 @@
     <string name="app_name">EulogioEP Portfolio</string>
     <string name="male">man</string>
     <string name="female">women</string>
+    <string name="height">height</string>
 </resources>

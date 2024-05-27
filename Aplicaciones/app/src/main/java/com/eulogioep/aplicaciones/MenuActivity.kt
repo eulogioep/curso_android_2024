@@ -8,6 +8,7 @@ import androidx.appcompat.widget.AppCompatButton
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.eulogioep.aplicaciones.firstapp.FirstAppActivity
+import com.eulogioep.aplicaciones.imccalc.IMCActivity
 
 class MenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,11 +21,19 @@ class MenuActivity : AppCompatActivity() {
             insets
         }
 
+        // Botones de acceso a las aplicaciones.
         val btnSaludos = findViewById<AppCompatButton>(R.id.btnSaludos)
+        val btnIMCApp = findViewById<AppCompatButton>(R.id.btnIMCApp)
 
-        btnSaludos.setOnClickListener {
-            navigateToSaludosAPP()
-        }
+        // Acciones al pulsar los botones.
+        btnSaludos.setOnClickListener{ navigateToSaludosAPP() }
+        btnIMCApp.setOnClickListener{ navigateToIMCAPP() }
+    }
+
+    private fun navigateToIMCAPP() {
+        val intent = Intent(this, IMCActivity::class.java)
+        startActivity(intent)
+
     }
 
 
@@ -32,8 +41,6 @@ class MenuActivity : AppCompatActivity() {
 
         val intent = Intent(this, FirstAppActivity::class.java)
         startActivity(intent)
-
-
     }
 
 

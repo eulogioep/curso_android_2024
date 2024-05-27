@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Aplicaciones</string>
+    <string name="app_name">Portfolio de EulogioEP</string>
+    <string name="male">Hombre</string>
+    <string name="female">Mujer</string>
 </resources>

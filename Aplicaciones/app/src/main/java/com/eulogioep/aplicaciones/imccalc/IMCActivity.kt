@@ -9,6 +9,7 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.eulogioep.aplicaciones.R
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.slider.RangeSlider
 import java.text.DecimalFormat
 
@@ -17,6 +18,8 @@ class IMCActivity : AppCompatActivity() {
     // Variables
     private var isMaleSelected: Boolean = true
     private var isFemaleSelected: Boolean = false
+    private var currentWeight: Int = 60
+    private var currentAge: Int = 25
 
     // Variables de los CardView
     // lateinit indica que se inicializará más adelante ya que no funcionaría fuera del método onCreate.
@@ -24,6 +27,13 @@ class IMCActivity : AppCompatActivity() {
     private lateinit var viewFemale: CardView
     private lateinit var tvHeight: TextView
     private lateinit var rsHeight: RangeSlider
+    private lateinit var btnPlusWeight: FloatingActionButton
+    private lateinit var btnSubtractWeight: FloatingActionButton
+    private lateinit var tvWeight: TextView
+    private lateinit var btnPlusAge: FloatingActionButton
+    private lateinit var btnSubtractAge: FloatingActionButton
+    private lateinit var tvAge: TextView
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -49,6 +59,13 @@ class IMCActivity : AppCompatActivity() {
         viewFemale = findViewById(R.id.viewFemale)
         tvHeight = findViewById(R.id.tvHeight)
         rsHeight = findViewById(R.id.rsHeight)
+        btnPlusWeight = findViewById(R.id.btnPlusWeight)
+        btnSubtractWeight = findViewById(R.id.btnSubtractWeight)
+        tvWeight = findViewById(R.id.tvWeight)
+        btnPlusAge = findViewById(R.id.btnPlusAge)
+        btnSubtractAge = findViewById(R.id.btnSubtractAge)
+        tvAge = findViewById(R.id.tvAge)
+
     }
 
 
@@ -67,6 +84,41 @@ class IMCActivity : AppCompatActivity() {
             val result = df.format(value)
             tvHeight.text = "$result cm"
         }
+
+        btnPlusWeight.setOnClickListener {
+            if (currentWeight < 120) {
+                currentWeight += 1
+                setWeight()
+            }
+
+        }
+
+        btnSubtractWeight.setOnClickListener {
+            if (currentWeight > 0) {
+                currentWeight -= 1
+                setWeight()
+            }
+        }
+
+        btnPlusAge.setOnClickListener {
+            currentAge += 1
+            setAge()
+        }
+
+        btnSubtractAge.setOnClickListener {
+            if (currentAge > 0){
+                currentAge -= 1
+                setAge()
+            }
+        }
+    }
+
+    private fun setAge() {
+        tvAge.text = currentAge.toString()
+    }
+
+    private fun setWeight() {
+        tvWeight.text = currentWeight.toString()
     }
 
     private fun changeGender() {
@@ -94,11 +146,9 @@ class IMCActivity : AppCompatActivity() {
 
     private fun initUI() {
         setGenderColor()
+        setWeight()
+        setAge()
     }
-
-
-
-
 
 
 }

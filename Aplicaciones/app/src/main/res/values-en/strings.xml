@@ -5,4 +5,13 @@
     <string name="female">women</string>
     <string name="height">height</string>
     <string name="height_def">120 cm</string>
+    <string name="weight">weight</string>
+    <string name="weight_num">60</string>
+    <string name="age">age</string>
+    <string name="writename">Write your name</string>
+    <string name="press">Press me!</string>
+    <string name="greetings_button_app">Greetings App</string>
+    <string name="bmi_butto_app">BMI App</string>
+    <string name="first_apps_portfolio">First Apps Portfolio</string>
+    <string name="hello_message">Hello %s</string>
 </resources>

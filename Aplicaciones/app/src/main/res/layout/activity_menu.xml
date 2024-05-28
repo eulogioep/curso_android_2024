@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Portfolio Primeras Apps"
+        android:text="@string/first_apps_portfolio"
         android:layout_gravity="center"
         android:textColor="@color/black"
         android:textSize="32sp"
@@ -24,7 +24,7 @@
         android:layout_width="150dp"
         android:layout_height="60dp"
         android:layout_marginHorizontal="20dp"
-        android:text="Saludos APP"
+        android:text="@string/greetings_button_app"
         android:layout_gravity="center"
         android:textStyle="bold"
         android:layout_marginBottom="20dp"
@@ -35,7 +35,7 @@
         android:layout_width="150dp"
         android:layout_height="60dp"
         android:layout_marginHorizontal="20dp"
-        android:text="IMC APP"
+        android:text="@string/bmi_butto_app"
         android:layout_gravity="center"
         android:textStyle="bold"
         />

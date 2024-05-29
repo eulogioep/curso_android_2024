@@ -9,6 +9,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.eulogioep.aplicaciones.firstapp.FirstAppActivity
 import com.eulogioep.aplicaciones.imccalc.IMCActivity
+import com.eulogioep.aplicaciones.todoapp.TodoAppActivity
 
 class MenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,10 +25,17 @@ class MenuActivity : AppCompatActivity() {
         // Botones de acceso a las aplicaciones.
         val btnSaludos = findViewById<AppCompatButton>(R.id.btnSaludos)
         val btnIMCApp = findViewById<AppCompatButton>(R.id.btnIMCApp)
+        val btnTODOApp = findViewById<AppCompatButton>(R.id.btnTODOApp)
 
         // Acciones al pulsar los botones.
         btnSaludos.setOnClickListener{ navigateToSaludosAPP() }
         btnIMCApp.setOnClickListener{ navigateToIMCAPP() }
+        btnTODOApp.setOnClickListener{ navigateToTODOAPP() }
+    }
+
+    private fun navigateToTODOAPP() {
+        val intent = Intent(this, TodoAppActivity::class.java)
+        startActivity(intent)
     }
 
     private fun navigateToIMCAPP() {
@@ -42,6 +50,7 @@ class MenuActivity : AppCompatActivity() {
         val intent = Intent(this, FirstAppActivity::class.java)
         startActivity(intent)
     }
+
 
 
 }

@@ -11,7 +11,7 @@
     <string name="writename">Write your name</string>
     <string name="press">Press me!</string>
     <string name="greetings_button_app">Greetings App</string>
-    <string name="bmi_butto_app">BMI App</string>
+    <string name="imc_button_app">BMI App</string>
     <string name="first_apps_portfolio">First Apps Portfolio</string>
     <string name="hello_message">Hello %s</string>
     <string name="calculate">Calculate</string>
@@ -26,4 +26,5 @@
     <string name="title_obesity">Obesity</string>
     <string name="description_obesity">Your BMI is well above the normal range for your height and weight.</string>
     <string name="normal_normal_title">" Normal weight"</string>
+    <string name="todo_button_app">tasks app</string>
 </resources>

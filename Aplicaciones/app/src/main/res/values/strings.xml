@@ -10,7 +10,7 @@
     <string name="writename">Escribe tu nombre</string>
     <string name="press">¡Púlsame!</string>
     <string name="greetings_button_app">Saludos App</string>
-    <string name="bmi_butto_app">IMC App</string>
+    <string name="imc_button_app">IMC App</string>
     <string name="first_apps_portfolio">Portfolio Primeras Apps</string>
     <string name="hello_message">Hola %s</string>
     <string name="calculate">Calcular</string>
@@ -25,4 +25,5 @@
     <string name="description_overweight">Su IMC es superior al rango normal para su altura y peso.</string>
     <string name="title_obesity">Obesidad</string>
     <string name="description_obesity">Su IMC es muy superior al rango normal para su altura y peso.</string>
+    <string name="todo_button_app">tareas app</string>
 </resources>

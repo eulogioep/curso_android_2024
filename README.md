@@ -9,3 +9,5 @@
 4.- [Ejercicios de Google para empezar con Android](https://github.com/eulogioep/curso_android_2024/tree/main/Aplicaciones/app/src/main/java/com/eulogioep/aplicaciones/exercises)
 
 5.- [Primera APP: Saludo entre pantallas](https://github.com/eulogioep/curso_android_2024/tree/main/Aplicaciones/app/src/main/java/com/eulogioep/aplicaciones/firstapp)
+
+6.- [Segunda APP: Calculadora del índice de masa corporal (IMC)](https://github.com/eulogioep/curso_android_2024/tree/main/Aplicaciones/app/src/main/java/com/eulogioep/aplicaciones/imccalc)

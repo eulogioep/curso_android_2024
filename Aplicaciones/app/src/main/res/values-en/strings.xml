@@ -27,4 +27,6 @@
     <string name="description_obesity">Your BMI is well above the normal range for your height and weight.</string>
     <string name="normal_normal_title">" Normal weight"</string>
     <string name="todo_button_app">tasks app</string>
+    <string name="todo_tv_welcome">greetings</string>
+    <string name="todo_categorias">categories</string>
 </resources>

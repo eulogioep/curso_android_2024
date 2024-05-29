@@ -243,10 +243,10 @@
                 android:id="@+id/tvAge"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                tools:text="25"
                 android:textColor="@color/white"
                 android:textSize="38sp"
-                android:textStyle="bold">
+                android:textStyle="bold"
+                tools:text="25">
 
             </TextView>
 
@@ -287,6 +287,18 @@
 
 
     </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:text="@string/calculate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="32dp">
+
+    </Button>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

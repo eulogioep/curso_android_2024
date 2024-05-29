@@ -13,4 +13,16 @@
     <string name="bmi_butto_app">IMC App</string>
     <string name="first_apps_portfolio">Portfolio Primeras Apps</string>
     <string name="hello_message">Hola %s</string>
+    <string name="calculate">Calcular</string>
+    <string name="result">Tu Resultado</string>
+    <string name="recalculate">Recalcular</string>
+    <string name="error">Error</string>
+    <string name="title_under_weight">Bajo peso</string>
+    <string name="description_under_weight">Su IMC es inferior al rango normal para su altura y peso.</string>
+    <string name="normal_normal_title">Peso Normal</string>
+    <string name="description_normal_weight">Su IMC es normal al rango normal para su altura y peso.</string>
+    <string name="title_overweight">Sobrepeso</string>
+    <string name="description_overweight">Su IMC es superior al rango normal para su altura y peso.</string>
+    <string name="title_obesity">Obesidad</string>
+    <string name="description_obesity">Su IMC es muy superior al rango normal para su altura y peso.</string>
 </resources>

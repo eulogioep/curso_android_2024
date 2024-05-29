@@ -14,4 +14,16 @@
     <string name="bmi_butto_app">BMI App</string>
     <string name="first_apps_portfolio">First Apps Portfolio</string>
     <string name="hello_message">Hello %s</string>
+    <string name="calculate">Calculate</string>
+    <string name="result">Your Result</string>
+    <string name="recalculate">Recalculate</string>
+    <string name="error">Error</string>
+    <string name="title_under_weight">Under weight</string>
+    <string name="description_under_weight">" Your BMI is below the normal range for your height and weight."</string>
+    <string name="description_normal_weight">Your BMI is within the normal range for your height and weight.</string>
+    <string name="title_overweight">Overweight</string>
+    <string name="description_overweight">Your BMI is above the normal range for your height and weight.</string>
+    <string name="title_obesity">Obesity</string>
+    <string name="description_obesity">Your BMI is well above the normal range for your height and weight.</string>
+    <string name="normal_normal_title">" Normal weight"</string>
 </resources>

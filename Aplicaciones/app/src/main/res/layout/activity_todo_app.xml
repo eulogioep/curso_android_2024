@@ -14,22 +14,19 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="32dp"
         android:layout_marginVertical="44dp"
+        android:text="@string/todo_tv_welcome"
         android:textAllCaps="true"
         android:textColor="@color/white"
         android:textSize="35sp"
-        android:textStyle="bold"
-        android:text="@string/todo_tv_welcome">
+        android:textStyle="bold">
 
     </TextView>
 
     <TextView
+        style="@style/TodoSubtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/todo_categorias"
-        android:textAllCaps="true"
-        android:textColor="@color/todo_subtitle_text"
-        android:layout_marginHorizontal="32dp">
-    </TextView>
+        android:text="@string/todo_categorias"></TextView>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvCategories"
@@ -37,5 +34,22 @@
         android:layout_height="wrap_content">
 
     </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        style="@style/TodoSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/todo_tasks">
+
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
 
 </LinearLayout>

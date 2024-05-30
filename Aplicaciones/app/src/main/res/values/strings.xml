@@ -32,4 +32,8 @@
     <string name="todo_button_app">tareas app</string>
     <string name="todo_tv_welcome">saludos</string>
     <string name="todo_categorias">categorias</string>
+    <string name="todo_text_business">Trabajo</string>
+    <string name="todo_text_other">Otros</string>
+    <string name="todo_text_personal">Personal</string>
+    <string name="todo_tasks">tareas</string>
 </resources>

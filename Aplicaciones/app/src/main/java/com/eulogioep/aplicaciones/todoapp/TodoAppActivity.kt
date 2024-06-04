@@ -8,6 +8,7 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.eulogioep.aplicaciones.R
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class TodoAppActivity : AppCompatActivity() {
 
@@ -17,10 +18,19 @@ class TodoAppActivity : AppCompatActivity() {
         TaskCategory.Other
     )
 
+    private val tasks = mutableListOf(
+        Task("Prueba Business", TaskCategory.Business),
+        Task("Prueba Personal", TaskCategory.Personal),
+        Task("Prueba Other", TaskCategory.Other),
+    )
+
     private lateinit var rvCategories: RecyclerView
     private lateinit var categoriesAdapter: CategoriesAdapter
 
     private lateinit var rvTasks: RecyclerView
+    private lateinit var tasksAdapter: TasksAdapter
+
+    private lateinit var fabAddTask: FloatingActionButton
 
 
 
@@ -36,12 +46,23 @@ class TodoAppActivity : AppCompatActivity() {
 
         iniComponent()
         initUI()
+        initListeners()
+
+
+    }
+
+    private fun initListeners() {
+        fabAddTask.setOnClickListener {showDialog() }
+    }
+
+    private fun showDialog() {
 
     }
 
     private fun iniComponent() {
         rvCategories = findViewById(R.id.rvCategories)
         rvTasks = findViewById(R.id.rvTasks)
+        fabAddTask = findViewById(R.id.fabAddTask)
     }
 
     private fun initUI() {
@@ -49,6 +70,10 @@ class TodoAppActivity : AppCompatActivity() {
         rvCategories.layoutManager =
             LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
         rvCategories.adapter = categoriesAdapter
+
+        tasksAdapter = TasksAdapter(tasks)
+        rvTasks.layoutManager = LinearLayoutManager(this)
+        rvTasks.adapter = tasksAdapter
     }
 
 

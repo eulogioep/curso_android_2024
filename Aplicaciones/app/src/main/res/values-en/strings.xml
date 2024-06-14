@@ -33,4 +33,9 @@
     <string name="todo_text_other">Other</string>
     <string name="todo_text_personal">Personal</string>
     <string name="todo_tasks">tasks</string>
+    <string name="todo_dialog_add_task">Add the task</string>
+    <string name="todo_dialog_business">Business</string>
+    <string name="todo_dialog_personal">Personal</string>
+    <string name="todo_dialog_others">Others</string>
+    <string name="todo_create_task_button">create task</string>
 </resources>

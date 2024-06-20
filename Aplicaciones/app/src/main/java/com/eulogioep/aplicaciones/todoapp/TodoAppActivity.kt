@@ -2,6 +2,10 @@ package com.eulogioep.aplicaciones.todoapp
 
 import android.app.Dialog
 import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
+import android.widget.RadioButton
+import android.widget.RadioGroup
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -59,8 +63,35 @@ class TodoAppActivity : AppCompatActivity() {
     private fun showDialog() {
         val dialog = Dialog(this)
         dialog.setContentView(R.layout.dialog_task)
+
+        val btnAddTask: Button = dialog.findViewById(R.id.btnAddTask)
+        val etTask: EditText = dialog.findViewById(R.id.etTask)
+        val rgCategories: RadioGroup = dialog.findViewById(R.id.rgCategories)
+
+        btnAddTask.setOnClickListener {
+
+            val currentTask = etTask.text.toString()
+            if(currentTask.isNotEmpty()){
+                val selectedId = rgCategories.checkedRadioButtonId
+                val selectedRadioButton: RadioButton = rgCategories.findViewById(selectedId)
+                val currentCategory: TaskCategory = when (selectedRadioButton.text) {
+                    getString(R.string.todo_dialog_business) -> TaskCategory.Business
+                    getString(R.string.todo_dialog_personal) -> TaskCategory.Personal
+                    else -> TaskCategory.Other
+                }
+                tasks.add(Task(currentTask, currentCategory))
+                updateTask()
+                dialog.hide()
+            }
+
+        }
+
         dialog.show()
 
+    }
+
+    private fun updateTask() {
+        tasksAdapter.notifyDataSetChanged()
     }
 
     private fun iniComponent() {

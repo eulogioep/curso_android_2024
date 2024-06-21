@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.eulogioep.aplicaciones.R
 
-class CategoriesAdapter(private val categories: List<TaskCategory>) :
+class CategoriesAdapter(private val categories: List<TaskCategory>, private val onItemSelected: (Int) -> Unit) :
     RecyclerView.Adapter<CategoriesViewHolder>() {
 
     // Crea una nueva vista para cada elemento de la lista.
@@ -20,7 +20,7 @@ class CategoriesAdapter(private val categories: List<TaskCategory>) :
 
     // Vincula los datos a cada elemento de la lista.
     override fun onBindViewHolder(holder: CategoriesViewHolder, position: Int) {
-        holder.render(categories[position])
+        holder.render(categories[position], onItemSelected)
     }
 
 

@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Portfolio de EulogioEP</string>
 
-<!--    IMC APP -->
+    <!--    IMC APP -->
     <string name="male">Hombre</string>
     <string name="female">Mujer</string>
     <string name="height">Altura</string>
@@ -28,7 +28,7 @@
     <string name="title_obesity">Obesidad</string>
     <string name="description_obesity">Su IMC es muy superior al rango normal para su altura y peso.</string>
 
-<!--    TodoAPP -->
+    <!--    TodoAPP -->
     <string name="todo_button_app">tareas app</string>
     <string name="todo_tv_welcome">saludos</string>
     <string name="todo_categorias">categorias</string>

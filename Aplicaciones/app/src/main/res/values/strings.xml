@@ -42,4 +42,7 @@
     <string name="todo_dialog_others">Otros</string>
     <string name="todo_create_task_button">crear tarea</string>
 
+    <!--    SuperHero -->
+    <string name="superhero_app">Superhéroes App</string>
+
 </resources>

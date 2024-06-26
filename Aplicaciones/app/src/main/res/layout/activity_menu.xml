@@ -49,4 +49,14 @@
         android:layout_marginBottom="20dp"
         android:textStyle="bold" />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSuperHero"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="0dp"
+        android:text="@string/superhero_app"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold" />
+
 </LinearLayout>

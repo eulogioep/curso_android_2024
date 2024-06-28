@@ -8,6 +8,7 @@ import androidx.appcompat.widget.SearchView
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.isVisible
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.eulogioep.aplicaciones.R
 import com.eulogioep.aplicaciones.databinding.ActivitySuperHeroListBinding
 import kotlinx.coroutines.CoroutineScope
@@ -21,6 +22,8 @@ class SuperHeroListActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivitySuperHeroListBinding
     private lateinit var retrofit: Retrofit
+
+    private lateinit var adapter: SuperheroAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,17 +45,19 @@ class SuperHeroListActivity : AppCompatActivity() {
             // Se activa al pulsar el botón de buscar.
             override fun onQueryTextSubmit(query: String?): Boolean {
                 searchByName(query.orEmpty())
-
                 return false
             }
-
 
             // Se activa la función cada vez que se escribe en el buscador.
             override fun onQueryTextChange(newText: String?): Boolean {
                 return false
             }
-        }
-        )
+        })
+
+        adapter = SuperheroAdapter()
+        binding.rvSuperhero.setHasFixedSize(true)
+        binding.rvSuperhero.layoutManager = LinearLayoutManager(this)
+        binding.rvSuperhero.adapter = adapter
     }
 
     private fun searchByName(query: String) {
@@ -62,9 +67,10 @@ class SuperHeroListActivity : AppCompatActivity() {
                 retrofit.create(ApiService::class.java).getSuperheroes(query)
             if (myResponse.isSuccessful) {
                 val response: SuperHeroDataResponse? = myResponse.body()
-                if(response != null){
+                if (response != null) {
                     Log.i("eulogioep", response.toString())
-                    runOnUiThread{
+                    runOnUiThread {
+                        adapter.updateList(response.superheroes)
                         binding.progressBar.isVisible = false
                     }
                 }

@@ -5,7 +5,10 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.eulogioep.aplicaciones.R
 
-class SuperheroAdapter(var superheroList: List<SuperHeroItemResponse> = emptyList()) :
+class SuperheroAdapter(
+    var superheroList: List<SuperHeroItemResponse> = emptyList(),
+    private val onItemSelected: (String) -> Unit
+) :
     RecyclerView.Adapter<SuperheroViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SuperheroViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
@@ -14,7 +17,7 @@ class SuperheroAdapter(var superheroList: List<SuperHeroItemResponse> = emptyLis
     }
 
     override fun onBindViewHolder(viewHolder: SuperheroViewHolder, position: Int) {
-        viewHolder.bind(superheroList[position])
+        viewHolder.bind(superheroList[position], onItemSelected)
     }
 
     override fun getItemCount(): Int = superheroList.size

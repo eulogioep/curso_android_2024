@@ -39,4 +39,10 @@
     <string name="todo_dialog_others">Others</string>
     <string name="todo_create_task_button">create task</string>
     <string name="superhero_app">SuperHero App</string>
+    <string name="superhero_intelligence">Intelligence</string>
+    <string name="superhero_strength">Strength</string>
+    <string name="superhero_speed">Speed</string>
+    <string name="superhero_durability">Durability</string>
+    <string name="superhero_power">Power</string>
+    <string name="superhero_combat">Combat</string>
 </resources>

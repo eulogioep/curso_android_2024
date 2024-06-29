@@ -44,5 +44,11 @@
 
     <!--    SuperHero -->
     <string name="superhero_app">Superhéroes App</string>
+    <string name="superhero_intelligence">Inteligencia</string>
+    <string name="superhero_strength">Fuerza</string>
+    <string name="superhero_speed">Velocidad</string>
+    <string name="superhero_durability">Dureza</string>
+    <string name="superhero_power">Poder</string>
+    <string name="superhero_combat">Combate</string>
 
 </resources>

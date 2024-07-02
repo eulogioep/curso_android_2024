@@ -51,4 +51,7 @@
     <string name="superhero_power">Poder</string>
     <string name="superhero_combat">Combate</string>
 
+    <!--    Settings -->
+    <string name="settings_button_app">Ajustes App</string>
+
 </resources>

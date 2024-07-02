@@ -45,4 +45,5 @@
     <string name="superhero_durability">Durability</string>
     <string name="superhero_power">Power</string>
     <string name="superhero_combat">Combat</string>
+    <string name="settings_button_app">" App"</string>
 </resources>

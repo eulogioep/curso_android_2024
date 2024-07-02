@@ -2,13 +2,13 @@ package com.eulogioep.aplicaciones
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.eulogioep.aplicaciones.firstapp.FirstAppActivity
 import com.eulogioep.aplicaciones.imccalc.IMCActivity
+import com.eulogioep.aplicaciones.settings.SettingsActivity
 import com.eulogioep.aplicaciones.superheroapp.SuperHeroListActivity
 import com.eulogioep.aplicaciones.todoapp.TodoAppActivity
 
@@ -28,12 +28,19 @@ class MenuActivity : AppCompatActivity() {
         val btnIMCApp = findViewById<AppCompatButton>(R.id.btnIMCApp)
         val btnTODOApp = findViewById<AppCompatButton>(R.id.btnTODOApp)
         val btnSuperHero = findViewById<AppCompatButton>(R.id.btnSuperHero)
+        val btnSettings = findViewById<AppCompatButton>(R.id.btnSettings)
 
         // Acciones al pulsar los botones.
         btnSaludos.setOnClickListener{ navigateToSaludosAPP() }
         btnIMCApp.setOnClickListener{ navigateToIMCAPP() }
         btnTODOApp.setOnClickListener{ navigateToTODOAPP() }
         btnSuperHero.setOnClickListener{ navigateToSuperHeroAPP() }
+        btnSettings.setOnClickListener{ navigateToSettingsAPP() }
+    }
+
+    private fun navigateToSettingsAPP() {
+        val intent = Intent(this, SettingsActivity::class.java)
+        startActivity(intent)
     }
 
     private fun navigateToSuperHeroAPP() {

@@ -46,4 +46,8 @@
     <string name="superhero_power">Power</string>
     <string name="superhero_combat">Combat</string>
     <string name="settings_button_app">" App"</string>
+    <string name="settings_dark_mode">Dark mode</string>
+    <string name="settings_description_dark_mode">Activate dark mode</string>
+    <string name="settings_bluetooth">Activate Bluetooth</string>
+    <string name="settings_description_bluetooth">Connect compatible peripherals without cables</string>
 </resources>

@@ -53,5 +53,9 @@
 
     <!--    Settings -->
     <string name="settings_button_app">Ajustes App</string>
+    <string name="settings_dark_mode">Modo Oscuro</string>
+    <string name="settings_description_dark_mode">Activa el modo oscuro</string>
+    <string name="settings_bluetooth">Activar Bluetooth</string>
+    <string name="settings_description_bluetooth">Conecta periféricos compatibles sin cables</string>
 
 </resources>

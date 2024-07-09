@@ -50,4 +50,6 @@
     <string name="settings_description_dark_mode">Activate dark mode</string>
     <string name="settings_bluetooth">Activate Bluetooth</string>
     <string name="settings_description_bluetooth">Connect compatible peripherals without cables</string>
+    <string name="settings_vibrate">Activate vibration on calls</string>
+    <string name="settings_volume">volume</string>
 </resources>

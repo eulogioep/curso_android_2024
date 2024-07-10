@@ -32,7 +32,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/settings_dark_mode"
-                android:textColor="@color/black">
+                android:textColor="@color/settings_text_title">
 
             </TextView>
 
@@ -80,7 +80,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/settings_bluetooth"
-                android:textColor="@color/black">
+                android:textColor="@color/settings_text_title">
 
             </TextView>
 
@@ -135,7 +135,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/settings_volume"
-                android:textColor="@color/black">
+                android:textColor="@color/settings_text_title">
 
             </TextView>
 
@@ -175,7 +175,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/settings_vibrate"
-            android:textColor="@color/black">
+            android:textColor="@color/settings_text_title">
 
         </TextView>
 
